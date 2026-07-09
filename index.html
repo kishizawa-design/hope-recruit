@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="株式会社HOPE（さいたま市）採用情報。接骨院・障がい者グループホーム・放課後等デイサービス・小児訪問看護など、全事業の求人一覧。「心身の不安を希望に。」" />
+<title>採用情報｜株式会社HOPE｜さいたま市（医療・福祉）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=M+PLUS+Rounded+1c:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --c-primary:#1E77B7;         /* HOPEブルー（ロゴ由来） */
+    --c-primary-dark:#155A8C;
+    --c-accent:#F8B500;          /* サブアクセント */
+    --c-coral:#FF7F6B;
+    --c-ink:#1F2A44;
+    --c-ink-soft:#5A6478;
+    --c-bg:#F7FAFC;
+    --c-bg-soft:#EEF3F8;
+    --c-line:#DDE5EE;
+    --radius-lg:24px;
+    --radius-md:16px;
+    --shadow-sm:0 4px 16px rgba(30,119,183,.08);
+    --shadow-md:0 16px 40px rgba(30,119,183,.15);
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic UI",sans-serif;
+    color:var(--c-ink);
+    background:var(--c-bg);
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  /* ===== Header ===== */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--c-line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{width:36px;height:auto}
+  .brand-text{font-family:"M PLUS Rounded 1c";font-weight:800;font-size:18px;color:var(--c-primary)}
+  .brand-text .sub{color:var(--c-ink-soft);font-size:12px;font-weight:600;margin-left:6px}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:6px;
+    background:var(--c-primary);color:#fff;
+    padding:10px 20px;border-radius:999px;font-weight:800;font-size:14px;
+    transition:.2s;
+  }
+  .nav-cta:hover{background:var(--c-ink);transform:translateY(-1px)}
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;padding:72px 0 90px;overflow:hidden;
+    background:
+      linear-gradient(135deg,rgba(30,119,183,.85) 0%,rgba(21,90,140,.75) 60%,rgba(248,181,0,.5) 100%),
+      url("images/kids-05.jpg") center/cover no-repeat;
+    color:#fff;
+  }
+  .hero::before{
+    content:"";position:absolute;top:-100px;right:-100px;
+    width:400px;height:400px;border-radius:50%;
+    background:radial-gradient(circle,rgba(248,181,0,.35) 0%,transparent 70%);
+  }
+  .hero::after{
+    content:"";position:absolute;bottom:-100px;left:-100px;
+    width:350px;height:350px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,127,107,.35) 0%,transparent 70%);
+  }
+  .hero .container{position:relative;z-index:1;text-align:center}
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--c-accent);color:var(--c-ink);
+    font-weight:900;font-size:13px;letter-spacing:.08em;
+    padding:8px 18px;border-radius:999px;margin-bottom:22px;
+    box-shadow:0 6px 20px rgba(0,0,0,.25);
+  }
+  .hero-badge::before{
+    content:"";width:8px;height:8px;border-radius:50%;background:var(--c-ink);
+  }
+  h1.hero-title{
+    font-family:"M PLUS Rounded 1c";font-weight:900;
+    font-size:clamp(28px,4.6vw,50px);
+    line-height:1.5;margin:0 0 20px;letter-spacing:.01em;
+    color:#fff;text-shadow:0 4px 20px rgba(0,0,0,.35);
+  }
+  h1.hero-title .marker{
+    background:linear-gradient(transparent 62%, var(--c-accent) 62% 92%, transparent 92%);
+    padding:0 6px;color:#fff;
+  }
+  h1.hero-title .primary{color:var(--c-accent)}
+  .hero-sub{
+    font-size:17px;color:#fff;margin:0 auto 32px;max-width:640px;
+    line-height:2;text-shadow:0 2px 12px rgba(0,0,0,.4);
+    font-weight:500;
+  }
+  .hero-slogan{
+    display:inline-block;
+    font-family:"M PLUS Rounded 1c";font-weight:800;font-size:18px;
+    color:var(--c-ink);background:#fff;
+    padding:10px 26px;border-radius:999px;
+    box-shadow:0 8px 24px rgba(0,0,0,.2);
+  }
+
+  /* ===== Section common ===== */
+  section{padding:80px 0}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    color:var(--c-primary);font-weight:800;letter-spacing:.18em;
+    font-size:12.5px;margin-bottom:12px;text-transform:uppercase;
+  }
+  .eyebrow::before{
+    content:"";width:24px;height:2px;background:var(--c-primary);
+  }
+  h2.sec-title{
+    font-family:"M PLUS Rounded 1c";font-weight:800;
+    font-size:clamp(24px,3.3vw,36px);
+    line-height:1.5;margin:0 0 18px;
+  }
+  h2.sec-title .marker{
+    background:linear-gradient(transparent 64%, var(--c-accent) 64% 92%, transparent 92%);
+    padding:0 4px;
+  }
+  .sec-lead{color:var(--c-ink-soft);max-width:720px;margin:0 0 48px;font-size:16px;line-height:2}
+  .sec-center{text-align:center}
+  .sec-center .sec-lead{margin:0 auto 48px}
+
+  /* ===== Jobs ===== */
+  .jobs{background:#fff}
+  .job-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:24px;
+  }
+  .job-card{
+    background:#fff;border-radius:var(--radius-lg);overflow:hidden;
+    border:1px solid var(--c-line);box-shadow:var(--shadow-sm);
+    transition:.25s;display:flex;flex-direction:column;
+    position:relative;
+  }
+  .job-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+  .job-card.featured{
+    border:2px solid var(--c-accent);
+  }
+  .job-card.featured::before{
+    content:"新着 NEW";position:absolute;top:16px;right:16px;
+    background:var(--c-accent);color:var(--c-ink);
+    font-size:11px;font-weight:900;letter-spacing:.1em;
+    padding:5px 12px;border-radius:999px;z-index:2;
+  }
+  .job-header{
+    padding:28px 28px 20px;
+    background:linear-gradient(135deg,var(--card-c1) 0%,var(--card-c2) 100%);
+    color:#fff;
+  }
+  .job-card[data-cat="訪問看護"]{--card-c1:#F8B500;--card-c2:#FF7F6B}
+  .job-card[data-cat="放課後デイ"]{--card-c1:#7EC8E3;--card-c2:#1E77B7}
+  .job-card[data-cat="グループホーム"]{--card-c1:#C7E9CE;--card-c2:#4A9B6E}
+  .job-card[data-cat="接骨院"]{--card-c1:#B98CFF;--card-c2:#7E4EC7}
+  .job-card[data-cat="訪問支援"]{--card-c1:#FFB088;--card-c2:#E86A3A}
+  .job-card[data-cat="バックオフィス"]{--card-c1:#B0C7DB;--card-c2:#4A6885}
+  .job-icon{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:56px;height:56px;border-radius:14px;background:rgba(255,255,255,.25);
+    font-size:28px;margin-bottom:14px;
+  }
+  .job-cat{
+    display:inline-block;font-size:11px;letter-spacing:.14em;font-weight:800;
+    padding:4px 10px;background:rgba(255,255,255,.25);border-radius:999px;
+    margin-bottom:8px;
+  }
+  .job-name{
+    font-family:"M PLUS Rounded 1c";font-weight:800;font-size:24px;
+    margin:0 0 6px;line-height:1.4;
+  }
+  .job-sub{font-size:13.5px;opacity:.9;margin:0}
+  .job-body{padding:24px 28px 20px;flex:1;display:flex;flex-direction:column}
+  .job-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+  .job-tag{
+    background:var(--c-bg-soft);color:var(--c-ink);
+    font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:999px;
+  }
+  .job-tag.hl{background:var(--c-primary);color:#fff}
+  .job-desc{
+    font-size:14.5px;color:var(--c-ink-soft);line-height:1.8;margin:0 0 20px;
+    flex:1;
+  }
+  .job-meta{
+    border-top:1px dashed var(--c-line);padding-top:16px;margin-top:auto;
+    display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--c-ink-soft);
+    margin-bottom:20px;
+  }
+  .job-meta span{display:inline-flex;align-items:center;gap:4px}
+  .job-cta{
+    display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    background:var(--c-primary);color:#fff;padding:14px 24px;
+    border-radius:999px;font-weight:800;font-size:15px;
+    transition:.2s;
+  }
+  .job-cta:hover{background:var(--c-ink);transform:translateY(-2px)}
+  .job-cta.disabled{
+    background:var(--c-bg-soft);color:var(--c-ink-soft);cursor:default;pointer-events:none;
+  }
+  .job-cta.disabled::after{content:" ・準備中"}
+
+  /* ===== Atmosphere ===== */
+  .atmosphere{
+    background:linear-gradient(135deg,#FFF9EF 0%,#F0F7FC 100%);
+    position:relative;overflow:hidden;
+  }
+  .atmosphere::before{
+    content:"";position:absolute;top:-100px;right:-100px;
+    width:320px;height:320px;border-radius:50%;
+    background:radial-gradient(circle,rgba(248,181,0,.15) 0%,transparent 70%);
+  }
+  .atmosphere::after{
+    content:"";position:absolute;bottom:-100px;left:-100px;
+    width:280px;height:280px;border-radius:50%;
+    background:radial-gradient(circle,rgba(30,119,183,.12) 0%,transparent 70%);
+  }
+  .atmosphere .container{position:relative}
+  .atmos-grid{
+    display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center;
+    margin-bottom:36px;
+  }
+  .atmos-cluster{
+    position:relative;max-width:480px;margin:0 auto;
+    display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;
+    gap:14px;
+  }
+  .atmos-photo{
+    position:relative;border-radius:var(--radius-md);overflow:hidden;
+    box-shadow:var(--shadow-md);
+  }
+  .atmos-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+  .atmos-photo.main{
+    grid-column:1 / span 2;aspect-ratio:16/10;
+    border-radius:var(--radius-lg);transform:rotate(-1deg);
+  }
+  .atmos-photo.sub{aspect-ratio:4/5}
+  .atmos-photo.sub-1{transform:rotate(1.5deg)}
+  .atmos-photo.sub-2{transform:rotate(-2deg)}
+  .atmos-tag{
+    position:absolute;top:14px;left:14px;
+    background:#fff;color:var(--c-primary);
+    font-family:"M PLUS Rounded 1c";font-weight:800;font-size:12.5px;
+    padding:6px 14px;border-radius:999px;box-shadow:var(--shadow-sm);
+    letter-spacing:.08em;
+  }
+  .atmos-cards{
+    display:flex;flex-direction:column;gap:16px;
+  }
+  .voice-card{
+    background:#fff;border-radius:var(--radius-md);padding:24px 26px;
+    box-shadow:var(--shadow-sm);border:1px solid var(--c-line);
+    position:relative;
+  }
+  .voice-card::before{
+    content:"";position:absolute;left:0;top:20px;bottom:20px;width:4px;
+    background:linear-gradient(to bottom,var(--c-accent),var(--c-coral));
+    border-radius:0 4px 4px 0;
+  }
+  .voice-quote{
+    font-family:"M PLUS Rounded 1c";font-weight:900;font-size:19px;
+    color:var(--c-primary);margin-bottom:8px;line-height:1.55;
+  }
+  .voice-body{
+    margin:0 0 10px;font-size:14.5px;color:var(--c-ink-soft);line-height:1.85;
+  }
+  .voice-who{
+    font-size:12.5px;color:var(--c-ink-soft);font-weight:700;letter-spacing:.05em;
+  }
+  .atmos-strip{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:14px;
+    background:#fff;border-radius:var(--radius-lg);padding:22px 24px;
+    box-shadow:var(--shadow-sm);border:1px solid var(--c-line);
+  }
+  .atmos-mini{
+    display:flex;flex-direction:column;align-items:center;gap:6px;
+    text-align:center;
+  }
+  .atmos-mini .ic{font-size:26px}
+  .atmos-mini span:last-child{
+    font-family:"M PLUS Rounded 1c";font-weight:800;font-size:12.5px;
+    color:var(--c-ink);
+  }
+  @media (max-width:860px){
+    .atmos-grid{grid-template-columns:1fr;gap:28px}
+    .atmos-photo{transform:rotate(0);max-width:340px}
+    .atmos-strip{grid-template-columns:repeat(3,1fr);gap:14px 10px}
+  }
+  @media (max-width:480px){
+    .atmos-strip{grid-template-columns:repeat(2,1fr)}
+  }
+
+  /* ===== Why HOPE ===== */
+  .why{background:var(--c-bg-soft)}
+  .why-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+  }
+  .why-card{
+    background:#fff;border-radius:var(--radius-md);padding:32px 26px;
+    box-shadow:var(--shadow-sm);text-align:center;border:1px solid var(--c-line);
+  }
+  .why-icon{
+    width:64px;height:64px;border-radius:50%;
+    background:linear-gradient(135deg,var(--c-primary),#4AA1D6);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-size:28px;margin:0 auto 16px;
+  }
+  .why-card h3{font-family:"M PLUS Rounded 1c";font-size:19px;margin:0 0 10px}
+  .why-card p{margin:0;color:var(--c-ink-soft);font-size:14.5px;line-height:1.85;text-align:left}
+
+  /* ===== Gallery ===== */
+  .gallery-sec{background:#fff}
+  .gallery-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);
+    grid-auto-rows:180px;gap:12px;
+  }
+  .gallery-grid figure{
+    margin:0;border-radius:var(--radius-md);overflow:hidden;
+    box-shadow:var(--shadow-sm);background:var(--c-bg-soft);
+    position:relative;
+  }
+  .gallery-grid figure img{
+    width:100%;height:100%;object-fit:cover;
+    transition:transform .5s ease;
+  }
+  .gallery-grid figure:hover img{transform:scale(1.06)}
+  .gallery-grid .g-large{grid-column:span 2;grid-row:span 2}
+  @media (max-width:860px){
+    .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+    .gallery-grid .g-large{grid-column:span 2;grid-row:span 2}
+  }
+
+  /* ===== Vision ===== */
+  .vision{
+    background:linear-gradient(135deg,#1E77B7 0%,#155A8C 100%);
+    color:#fff;text-align:center;position:relative;overflow:hidden;
+  }
+  .vision::before{
+    content:"";position:absolute;top:-80px;left:-80px;
+    width:300px;height:300px;border-radius:50%;
+    background:rgba(255,255,255,.08);
+  }
+  .vision::after{
+    content:"";position:absolute;bottom:-80px;right:-80px;
+    width:300px;height:300px;border-radius:50%;
+    background:rgba(248,181,0,.15);
+  }
+  .vision .container{position:relative}
+  .vision-slogan{
+    font-family:"M PLUS Rounded 1c";font-weight:900;
+    font-size:clamp(26px,3.8vw,38px);
+    margin:0 0 18px;color:#fff;line-height:1.6;
+  }
+  .vision-slogan .accent{color:var(--c-accent)}
+  .vision p{font-size:16px;line-height:2;max-width:640px;margin:0 auto;color:#E4EEF6}
+
+  /* ===== Steps ===== */
+  .steps{background:#fff}
+  .step-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:22px;
+  }
+  .step-card{
+    background:var(--c-bg-soft);border-radius:var(--radius-md);padding:32px 24px;
+    border:1px solid var(--c-line);position:relative;
+  }
+  .step-num{
+    position:absolute;top:-14px;left:24px;
+    background:var(--c-primary);color:#fff;
+    width:36px;height:36px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:"M PLUS Rounded 1c";font-weight:800;font-size:16px;
+    box-shadow:var(--shadow-sm);
+  }
+  .step-card h4{font-family:"M PLUS Rounded 1c";font-size:17px;margin:16px 0 8px}
+  .step-card p{font-size:13px;color:var(--c-ink-soft);margin:0;line-height:1.8}
+
+  /* ===== Final CTA ===== */
+  .final{
+    background:linear-gradient(135deg,#F8B500 0%,#FF7F6B 100%);
+    text-align:center;color:#fff;position:relative;overflow:hidden;
+  }
+  .final::before{
+    content:"";position:absolute;top:-150px;right:-150px;
+    width:400px;height:400px;border-radius:50%;background:rgba(255,255,255,.15);
+  }
+  .final .container{position:relative}
+  .final h2{
+    font-family:"M PLUS Rounded 1c";font-weight:900;
+    font-size:clamp(26px,3.5vw,38px);margin:0 0 16px;color:#fff;line-height:1.55;
+  }
+  .final p{font-size:16px;margin:0 0 32px;color:#fff}
+  .contact-box{
+    background:rgba(255,255,255,.95);border-radius:var(--radius-md);
+    padding:32px 40px;display:inline-block;text-align:left;color:var(--c-ink);
+    box-shadow:0 16px 32px rgba(0,0,0,.15);
+  }
+  .contact-box .label{font-size:12px;letter-spacing:.14em;color:var(--c-ink-soft);font-weight:700}
+  .contact-box .value{
+    font-family:"M PLUS Rounded 1c";font-weight:800;font-size:22px;
+    margin:4px 0 18px;color:var(--c-ink);
+  }
+  .contact-box .value a{color:var(--c-primary)}
+  .contact-tel{display:flex;gap:14px;flex-wrap:wrap}
+  .contact-tel span{
+    background:var(--c-bg-soft);padding:8px 14px;border-radius:8px;
+    font-size:13.5px;font-weight:600;
+  }
+  .contact-tel span strong{color:var(--c-primary)}
+
+  /* ===== Footer ===== */
+  footer.site{
+    background:var(--c-ink);color:#B8C1D0;padding:52px 0 32px;font-size:14px;
+  }
+  footer .foot-grid{
+    display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:start;
+  }
+  footer .footer-logo{
+    width:64px;height:auto;margin-bottom:14px;
+    filter:brightness(0) invert(1);opacity:.9;
+  }
+  footer .brand-foot{color:#fff;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:20px;margin-bottom:10px}
+  footer address{font-style:normal;line-height:1.95;margin-bottom:16px}
+  footer .foot-hp-btn{
+    display:inline-flex;align-items:center;gap:6px;
+    background:var(--c-primary);color:#fff;padding:10px 18px;border-radius:999px;
+    font-weight:800;font-size:13px;transition:.2s;
+  }
+  footer .foot-hp-btn:hover{background:var(--c-accent);color:var(--c-ink);transform:translateY(-2px)}
+  footer .foot-links{list-style:none;padding:0;margin:0;line-height:2.2}
+  footer .foot-links a:hover{color:var(--c-accent)}
+  footer .foot-links strong{color:#fff;display:block;margin-bottom:8px;font-size:15px}
+  footer .copy{margin-top:36px;border-top:1px solid #354158;padding-top:18px;color:#7d8694;font-size:12px}
+
+  /* ===== Responsive ===== */
+  @media (max-width:860px){
+    section{padding:60px 0}
+    .hero{padding:32px 0 48px}
+    .job-grid{grid-template-columns:1fr;gap:18px}
+    .why-grid{grid-template-columns:1fr;gap:16px}
+    .step-grid{grid-template-columns:1fr 1fr}
+    .contact-box{padding:24px 26px}
+    footer .foot-grid{grid-template-columns:1fr}
+    .nav-cta{padding:8px 14px;font-size:13px}
+    .brand-text{font-size:15px}
+    .brand-text .sub{display:none}
+  }
+  @media (max-width:480px){
+    .step-grid{grid-template-columns:1fr}
+    .contact-tel{flex-direction:column;gap:8px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site">
+  <div class="container nav">
+    <a href="#" class="brand">
+      <img src="images/hope-logo.png" alt="HOPE ロゴ">
+      <span class="brand-text">株式会社HOPE<span class="sub">RECRUIT</span></span>
+    </a>
+    <a href="#jobs" class="nav-cta">▶ 求人を見る</a>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container">
+    <span class="hero-badge">HOPE GROUP RECRUIT</span>
+    <h1 class="hero-title">
+      <span class="primary">これから大きくなる会社を、</span><br>
+      <span class="marker">一緒に盛り上げる</span>仲間を、<br>
+      募集します。
+    </h1>
+    <p class="hero-sub">
+      さいたま市を拠点に「医療部門」「福祉部門」を展開する株式会社HOPE。<br>
+      新規事業も続々スタート、成長真っ只中の会社です。<br>
+      あなたの専門とアイデアで、次の10年を一緒につくりませんか。
+    </p>
+    <div class="hero-slogan">心身の不安を、希望に。</div>
+  </div>
+</section>
+
+<!-- ===== Jobs ===== -->
+<section class="jobs" id="jobs">
+  <div class="container sec-center">
+    <span class="eyebrow">OPEN POSITIONS</span>
+    <h2 class="sec-title">現在<span class="marker">募集中の職種</span></h2>
+    <p class="sec-lead">HOPE グループの各事業所で、あなたのキャリアを活かせる仕事があります。詳細ページは各カードからご覧ください。</p>
+  </div>
+  <div class="container">
+    <div class="job-grid">
+
+      <!-- Cotoco 訪問看護 -->
+      <div class="job-card featured" data-cat="訪問看護">
+        <div class="job-header">
+          <div class="job-icon">🩺</div>
+          <span class="job-cat">医療部門 / 訪問看護</span>
+          <p class="job-name">HOPE Cotoco</p>
+          <p class="job-sub">小児訪問看護ステーション（2026年10月OPEN）</p>
+        </div>
+        <div class="job-body">
+          <div class="job-tags">
+            <span class="job-tag hl">看護師 募集</span>
+            <span class="job-tag">正社員</span>
+            <span class="job-tag">日勤のみ</span>
+            <span class="job-tag">土日祝休み</span>
+            <span class="job-tag">オンコールなし</span>
+          </div>
+          <p class="job-desc">
+            不登校・引きこもり・情緒や発達に困難をかかえる子どもたちへの訪問看護。子育て経験を活かして、日勤のみでゆったり働ける環境です。スターティングメンバー募集中。
+          </p>
+          <div class="job-meta">
+            <span>📍 さいたま市浦和区</span>
+            <span>💰 月給 28万円〜＋インセンティブ</span>
+          </div>
+          <a href="https://kishizawa-design.github.io/hope-cotoco-recruit/" target="_blank" rel="noopener" class="job-cta">
+            詳しく見る →
+          </a>
+        </div>
+      </div>
+
+      <!-- HOPE KIDS 放課後デイ -->
+      <div class="job-card" data-cat="放課後デイ">
+        <div class="job-header">
+          <div class="job-icon">🎈</div>
+          <span class="job-cat">福祉部門 / 放課後等デイサービス</span>
+          <p class="job-name">HOPE KIDS</p>
+          <p class="job-sub">第一教室（緑区）／第二教室（浦和区）／教室拡大中</p>
+        </div>
+        <div class="job-body">
+          <div class="job-tags">
+            <span class="job-tag hl">保育士・療育スタッフ</span>
+            <span class="job-tag">正職員／パート</span>
+            <span class="job-tag">未経験OK</span>
+            <span class="job-tag">持ち帰りなし</span>
+          </div>
+          <p class="job-desc">
+            走る。跳ぶ。笑う。子どもたちと一緒に本気で動く療育。少人数・アットホーム、外部講師による本格研修が月2回。「みんな仲良い」チームで長く働けます。
+          </p>
+          <div class="job-meta">
+            <span>📍 浦和区（第一・第二教室）</span>
+            <span>💰 月給 26.2万〜／時給1,500円〜</span>
+          </div>
+          <a href="https://kishizawa-design.github.io/hope-kids-recruit/" target="_blank" rel="noopener" class="job-cta">
+            詳しく見る →
+          </a>
+        </div>
+      </div>
+
+      <!-- HOPEハウス グループホーム -->
+      <div class="job-card" data-cat="グループホーム">
+        <div class="job-header">
+          <div class="job-icon">🏡</div>
+          <span class="job-cat">福祉部門 / 障がい者グループホーム</span>
+          <p class="job-name">HOPEハウス</p>
+          <p class="job-sub">共同生活援助・生活支援</p>
+        </div>
+        <div class="job-body">
+          <div class="job-tags">
+            <span class="job-tag hl">夜勤パート 募集中</span>
+            <span class="job-tag">世話人・生活支援員</span>
+            <span class="job-tag">資格不問</span>
+          </div>
+          <p class="job-desc">
+            障がいのある方が地域で「自分らしく暮らす」ためのグループホーム。日々の生活を一緒に支え、笑顔をつくる仕事です。福祉未経験の方も歓迎。
+          </p>
+          <div class="job-meta">
+            <span>📍 さいたま市</span>
+            <span>💰 夜勤パート 日給 19,800円</span>
+          </div>
+          <a href="https://kishizawa-design.github.io/hope-house/" target="_blank" rel="noopener" class="job-cta">
+            事業所ページを見る →
+          </a>
+        </div>
+      </div>
+
+      <!-- 接骨院 -->
+      <div class="job-card" data-cat="接骨院">
+        <div class="job-header">
+          <div class="job-icon">🦴</div>
+          <span class="job-cat">医療部門 / 接骨院</span>
+          <p class="job-name">きしざわ接骨院</p>
+          <p class="job-sub">HOPE グループの原点となる治療院</p>
+        </div>
+        <div class="job-body">
+          <div class="job-tags">
+            <span class="job-tag hl">受付スタッフ 募集中</span>
+            <span class="job-tag">柔道整復師も相談可</span>
+            <span class="job-tag">経験者歓迎</span>
+          </div>
+          <p class="job-desc">
+            地域の方々の「痛み」に長年向き合ってきた接骨院。技術も接遇も、患者さんに寄り添う姿勢を大切にしています。受付スタッフ・柔道整復師を募集。
+          </p>
+          <div class="job-meta">
+            <span>📍 さいたま市緑区道祖土</span>
+            <span>💰 受付 時給 1,300円〜</span>
+          </div>
+          <a href="https://www.kishizawaseikotsu.com/" target="_blank" rel="noopener" class="job-cta">
+            事業所ページを見る →
+          </a>
+        </div>
+      </div>
+
+      <!-- HOPE LINK 保育所等訪問支援 -->
+      <div class="job-card" data-cat="訪問支援">
+        <div class="job-header">
+          <div class="job-icon">🌈</div>
+          <span class="job-cat">福祉部門 / 保育所等訪問支援</span>
+          <p class="job-name">HOPE LINK</p>
+          <p class="job-sub">保育園・学校への訪問による発達支援</p>
+        </div>
+        <div class="job-body">
+          <div class="job-tags">
+            <span class="job-tag hl">訪問支援員</span>
+            <span class="job-tag">パート・非常勤</span>
+            <span class="job-tag">経験者歓迎</span>
+          </div>
+          <p class="job-desc">
+            発達に不安のあるお子さんの保育園・学校での「困った」に、専門職として寄り添う仕事。家庭と園・学校をつなぐ大切な役割です。
+          </p>
+          <div class="job-meta">
+            <span>📍 さいたま市</span>
+            <span>💰 時給 1,500円〜＋インセンティブ</span>
+          </div>
+          <a href="https://www.hope-saitama.com/hopelink/" target="_blank" rel="noopener" class="job-cta">
+            事業所ページを見る →
+          </a>
+        </div>
+      </div>
+
+      <!-- バックオフィス -->
+      <div class="job-card" data-cat="バックオフィス">
+        <div class="job-header">
+          <div class="job-icon">💻</div>
+          <span class="job-cat">法人本部 / バックオフィス</span>
+          <p class="job-name">バックオフィス要員</p>
+          <p class="job-sub">HOPE グループ全体を裏側から支えるお仕事</p>
+        </div>
+        <div class="job-body">
+          <div class="job-tags">
+            <span class="job-tag hl">バックオフィス 募集中</span>
+            <span class="job-tag">パート</span>
+            <span class="job-tag">PC基本操作</span>
+            <span class="job-tag">未経験OK</span>
+          </div>
+          <p class="job-desc">
+            書類整理、電話応対、勤怠・請求のサポートなど。グループ各事業所と関わりながら、現場のスタッフが働きやすい環境を裏方から支えるお仕事です。
+          </p>
+          <div class="job-meta">
+            <span>📍 さいたま市</span>
+            <span>💰 時給 1,500円〜</span>
+          </div>
+          <a href="mailto:info@hope-saitama.com?subject=バックオフィス募集の件" class="job-cta">
+            メールで問い合わせ →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Atmosphere / Staff Voice ===== -->
+<section class="atmosphere">
+  <div class="container sec-center">
+    <span class="eyebrow">ATMOSPHERE</span>
+    <h2 class="sec-title">HOPE で働く<span class="marker">毎日は、</span>こんな感じ。</h2>
+    <p class="sec-lead">
+      医療も福祉も、大事なのは「人と向き合う姿勢」。<br>
+      拡大中の会社だからこそ、これからつくっていく余地が山ほどあります。あなたのアイデアも大歓迎。
+    </p>
+  </div>
+  <div class="container">
+    <div class="atmos-grid">
+      <div class="atmos-cluster">
+        <div class="atmos-photo main">
+          <img src="images/kids-team.jpg" alt="HOPEスタッフ集合">
+          <div class="atmos-tag">HOPE のスタッフ</div>
+        </div>
+        <div class="atmos-photo sub sub-1">
+          <img src="images/photo-03-blocks.jpg" alt="現場の風景">
+        </div>
+        <div class="atmos-photo sub sub-2">
+          <img src="images/kids-06.jpg" alt="現場の風景">
+        </div>
+      </div>
+      <div class="atmos-cards">
+        <div class="voice-card">
+          <div class="voice-quote">“ ちゃんと笑って帰れる仕事 ”</div>
+          <p class="voice-body">利用者さんとも、スタッフ同士とも、素直に笑い合える職場です。「今日、楽しかったね」って言葉が自然に出るのがHOPEらしさ。</p>
+          <div class="voice-who">— 療育スタッフ</div>
+        </div>
+        <div class="voice-card">
+          <div class="voice-quote">“ ひとりで抱えない ”</div>
+          <p class="voice-body">困ったときすぐに相談できる先輩と、聞いてくれる同僚がいます。福祉も医療も、チームでやる仕事だから安心。</p>
+          <div class="voice-who">— 保育士</div>
+        </div>
+        <div class="voice-card">
+          <div class="voice-quote">“ 子育てと両立できる ”</div>
+          <p class="voice-body">送り迎え、学校行事、急な発熱……ちゃんと理解のある職場。子育て中のスタッフが多いから、お互いさま文化があります。</p>
+          <div class="voice-who">— 事務スタッフ</div>
+        </div>
+      </div>
+    </div>
+    <div class="atmos-strip">
+      <div class="atmos-mini"><span class="ic">😊</span><span>笑顔があふれる</span></div>
+      <div class="atmos-mini"><span class="ic">🤝</span><span>チームで支える</span></div>
+      <div class="atmos-mini"><span class="ic">☕</span><span>雑談も大事</span></div>
+      <div class="atmos-mini"><span class="ic">📚</span><span>学びが多い</span></div>
+      <div class="atmos-mini"><span class="ic">🌱</span><span>成長できる</span></div>
+      <div class="atmos-mini"><span class="ic">🏡</span><span>家庭も大切に</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why HOPE ===== -->
+<section class="why">
+  <div class="container sec-center">
+    <span class="eyebrow">WHY HOPE</span>
+    <h2 class="sec-title">HOPEグループで<span class="marker">働く3つの魅力</span></h2>
+    <p class="sec-lead">医療と福祉が一つの会社にあることで生まれる、他にはない働きやすさとキャリアの広がり。</p>
+  </div>
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🤝</div>
+        <h3>医療×福祉の連携</h3>
+        <p>接骨院、訪問看護、放課後デイ、グループホームなど、複数事業が連携。「医療だけ」「福祉だけ」では届かない支援を、チームで実現できます。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📚</div>
+        <h3>成長できる研修環境</h3>
+        <p>外部講師による専門研修を定期的に実施（費用は会社負担）。未経験からでも根拠のある支援スキルを身につけて、プロとして成長できます。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌱</div>
+        <h3>ライフステージに寄り添う</h3>
+        <p>子育て中、ブランクあり、資格を活かしたい……一人ひとりの働き方に合わせて相談可能。長く働ける環境づくりに本気で取り組んでいます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Gallery ===== -->
+<section class="gallery-sec">
+  <div class="container sec-center">
+    <span class="eyebrow">GALLERY</span>
+    <h2 class="sec-title">現場の<span class="marker">風景</span></h2>
+    <p class="sec-lead">医療も福祉も、写真だけでは伝わらない温かさがあります。まずは雰囲気を見てみてください。</p>
+  </div>
+  <div class="container">
+    <div class="gallery-grid">
+      <figure class="g-large"><img src="images/kids-01.jpg" alt="HOPEスタッフの笑顔"></figure>
+      <figure><img src="images/photo-02-cards.jpg" alt="対話と関わり"></figure>
+      <figure><img src="images/kids-activity-01.jpg" alt="活動風景"></figure>
+      <figure><img src="images/photo-03-blocks.jpg" alt="遊びを通した関わり"></figure>
+      <figure><img src="images/kids-activity-02.jpg" alt="活動風景"></figure>
+      <figure><img src="images/photo-01-smile.jpg" alt="スタッフの笑顔"></figure>
+      <figure><img src="images/kids-activity-04.jpg" alt="活動風景"></figure>
+      <figure><img src="images/photo-06-family.jpg" alt="訪問看護の現場"></figure>
+      <figure><img src="images/kids-car.jpg" alt="送迎"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Vision ===== -->
+<section class="vision">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--c-accent)">OUR VISION</span>
+    <h2 class="vision-slogan">「心身の不安を、<span class="accent">希望</span>に。」</h2>
+    <p>
+      医療だけでも、福祉だけでも足りない――両方がつながることで初めて支えられる人がいる。<br>
+      医療・福祉を通じて、子どもから大人まで、誰もが生まれ育った地域で<br>
+      安心して暮らし続けられる環境づくりを目指しています。
+    </p>
+    <p style="margin-top:24px;font-family:'M PLUS Rounded 1c';font-weight:800;font-size:15px;color:#fff">
+      株式会社HOPE 代表取締役　岸澤 裕太
+    </p>
+  </div>
+</section>
+
+<!-- ===== Steps ===== -->
+<section class="steps">
+  <div class="container sec-center">
+    <span class="eyebrow">FLOW</span>
+    <h2 class="sec-title">応募〜入職の<span class="marker">流れ</span></h2>
+    <p class="sec-lead">まずは「話を聞いてみたい」だけでもOK。見学だけの方も大歓迎です。</p>
+  </div>
+  <div class="container">
+    <div class="step-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>お問い合わせ</h4>
+        <p>各求人の詳細ページ、または下記の代表連絡先までご連絡ください。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>日程調整</h4>
+        <p>採用担当より返信。18時以降の面接・オンライン面接も対応可能。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>見学・面接</h4>
+        <p>事業所見学と面接。私服OK、履歴書手書き不要。カジュアルに。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h4>内定・入職</h4>
+        <p>ご家庭・現職の事情に合わせて、入職日を柔軟に調整します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Final CTA ===== -->
+<section class="final" id="contact">
+  <div class="container">
+    <h2>まずは、話を<br>聞かせてください。</h2>
+    <p>「どの事業所が自分に合うか分からない」というご相談もOKです。</p>
+    <div class="contact-box">
+      <div class="label">GENERAL CONTACT</div>
+      <div class="value"><a href="mailto:info@hope-saitama.com">info@hope-saitama.com</a></div>
+      <div class="contact-tel">
+        <span><strong>きしざわ接骨院</strong> 048-711-3448</span>
+        <span><strong>HOPE KIDS</strong> 048-711-6510</span>
+        <span><strong>HOPEハウス</strong> 070-7406-7483</span>
+        <span><strong>HOPE LINK</strong> 090-1595-5608</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site">
+  <div class="container foot-grid">
+    <div>
+      <img class="footer-logo" src="images/hope-logo.png" alt="HOPE">
+      <div class="brand-foot">株式会社 HOPE</div>
+      <address>
+        〒336-0907<br>
+        さいたま市緑区道祖土3-5-20（きしざわ接骨院）<br>
+        Email：info@hope-saitama.com
+      </address>
+      <a href="https://www.hope-saitama.com/" target="_blank" rel="noopener" class="foot-hp-btn">
+        🌐 株式会社HOPE 公式サイトへ
+      </a>
+    </div>
+    <div>
+      <ul class="foot-links">
+        <li><strong>各事業所</strong></li>
+        <li><a href="https://www.kishizawaseikotsu.com/" target="_blank" rel="noopener">きしざわ接骨院</a></li>
+        <li><a href="https://kishizawa-design.github.io/hope-house/" target="_blank" rel="noopener">HOPEハウス（グループホーム）</a></li>
+        <li><a href="https://kishizawa-design.github.io/hope-kids-saitama/" target="_blank" rel="noopener">HOPE KIDS（放課後等デイ）</a></li>
+        <li><a href="https://www.hope-saitama.com/hopelink/" target="_blank" rel="noopener">HOPE LINK（保育所等訪問支援）</a></li>
+        <li><a href="https://kishizawa-design.github.io/hope-cotoco-recruit/" target="_blank" rel="noopener">HOPE Cotoco（小児訪問看護）</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container copy">
+    © 株式会社HOPE. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
